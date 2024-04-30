@@ -1,16 +1,17 @@
 import { defineConfig } from 'vitepress';
+//导航栏
 import nav from './nav.mts';
-import { set_sidebar } from './gen_sidebar.mjs';
 //时间线
 import timeline from 'vitepress-markdown-timeline';
-// import sidebar from './sidebar.mts';
+//侧边栏
+import sidebar from './sidebar.mts';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: '迈途商贸有限公司',
   //这里可以不用改
   description: '产品资料站点',
   //服务器需要注释下面
-  base: '/newmt/',
+  base: '/maitu/',
   //文档目录的路径 报错
   //srcDir: 'docs',
   themeConfig: {
@@ -41,44 +42,8 @@ export default defineConfig({
       },
     },
 
-    sidebar: {
-      '/奥克斯洗鞋机/儿童款': set_sidebar('/奥克斯洗鞋机/儿童款'),
-      '/奥克斯洗鞋机/居家中小款': set_sidebar('/奥克斯洗鞋机/居家中小款'),
-      '/奥克斯洗鞋机/豪华大款': set_sidebar('/奥克斯洗鞋机/豪华大款'),
-      '/奥克斯洗鞋机/经典双桶款': set_sidebar('/奥克斯洗鞋机/经典双桶款'),
-
-      '/奥克斯洗鞋机/洗脱全自动': set_sidebar('/奥克斯洗鞋机/洗脱全自动'),
-
-      '/奥克斯洗鞋机/洗脱全自动加大款':
-        set_sidebar('/奥克斯洗鞋机/洗脱全自动加大款'),
-
-      '/奥克斯洗鞋机/智能全自动热烘干':
-        set_sidebar('/奥克斯洗鞋机/智能全自动热烘干'),
-
-      '/志高移动空调/小1匹': set_sidebar('/志高移动空调/小1匹'),
-      '/志高移动空调/1匹': set_sidebar('/志高移动空调/1匹'),
-      '/志高移动空调/1.5匹': set_sidebar('/志高移动空调/1.5匹'),
-      '/志高移动空调/2匹': set_sidebar('/志高移动空调/2匹'),
-
-      '/荣事达移动空调/小1匹': set_sidebar('/荣事达移动空调/小1匹'),
-      '/荣事达移动空调/1匹': set_sidebar('/荣事达移动空调/1匹'),
-      '/荣事达移动空调/1.5匹': set_sidebar('/荣事达移动空调/1.5匹'),
-      '/荣事达移动空调/2匹': set_sidebar('/荣事达移动空调/2匹'),
-
-      '/德姆勒挂机空调/1匹': set_sidebar('/德姆勒挂机空调/1匹'),
-      '/德姆勒挂机空调/1.5匹': set_sidebar('/德姆勒挂机空调/1.5匹'),
-      '/德姆勒挂机空调/2匹': set_sidebar('/德姆勒挂机空调/2匹'),
-
-      '/德姆勒柜机空调/2匹': set_sidebar('/德姆勒柜机空调/2匹'),
-      '/德姆勒柜机空调/3匹': set_sidebar('/德姆勒柜机空调/3匹'),
-
-      '/奥克斯电热毯/薄绒款': set_sidebar('/奥克斯电热毯/薄绒款'),
-
-      '/开发测试/格式测试': set_sidebar('/开发测试/格式测试'),
-    },
-
     //侧边栏导入
-    // sidebar: { ...sidebar } as any,
+    sidebar: { ...sidebar } as any,
     // sidebar: [
     //   {
     //     text: '儿童款',

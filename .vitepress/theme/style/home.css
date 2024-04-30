@@ -12,6 +12,13 @@
   --vp-c-brand-3: #298459;
 } */
 
+/* 侧边栏的标题样式 */
+/* .group {
+  .text {
+    color: #ff91bf !important;
+  }
+} */
+
 /* 文档侧边栏样式重写 */
 .VPSidebarGroup,
 .VPSidebarItem {
@@ -27,7 +34,7 @@
     padding: 3px 0;
     .link-text,
     .text {
-      padding-left: 50px;
+      padding-left: 5px;
     }
   }
 }
