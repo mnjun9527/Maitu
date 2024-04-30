@@ -11,7 +11,7 @@ export default defineConfig({
   //这里可以不用改
   description: '产品资料站点',
   //服务器需要注释下面
-  // base: '/Maitu/',
+  base: '/Maitu/',
   //文档目录的路径 报错
   //srcDir: 'docs',
   themeConfig: {
