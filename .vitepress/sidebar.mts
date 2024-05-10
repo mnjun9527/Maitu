@@ -2,6 +2,7 @@ export default {
   '/奥克斯洗鞋机/基础参数/': [
     {
       text: '半自动参数',
+      collapsed: false,
       items: [
         { text: '儿童款', link: '/奥克斯洗鞋机/基础参数/儿童款' },
         { text: '居家中小款', link: '/奥克斯洗鞋机/基础参数/居家中小款' },
@@ -12,6 +13,7 @@ export default {
     },
     {
       text: '全自动参数',
+      collapsed: false,
       items: [
         { text: '智能全自动款', link: '/奥克斯洗鞋机/基础参数/智能全自动款' },
 
@@ -38,6 +40,7 @@ export default {
   '/奥克斯洗鞋机/居家中小款/': [
     {
       text: '居家中小款',
+      collapsed: false,
       items: [
         { text: '基础参数', link: '/奥克斯洗鞋机/居家中小款/1.基础参数' },
         { text: '产品讲解', link: '/奥克斯洗鞋机/居家中小款/2.产品讲解' },
@@ -69,6 +72,7 @@ export default {
   '/志高移动空调/基础参数/': [
     {
       text: '1匹',
+      collapsed: false,
       items: [
         { text: '小1匹单冷', link: '/志高移动空调/基础参数/小1匹单冷' },
         { text: '1匹单冷', link: '/志高移动空调/基础参数/1匹单冷' },
@@ -76,6 +80,7 @@ export default {
     },
     {
       text: '1.5匹',
+      collapsed: false,
       items: [
         { text: '1.5匹单冷', link: '/志高移动空调/基础参数/1.5匹单冷' },
         { text: '1.5匹冷暖', link: '/志高移动空调/基础参数/1.5匹冷暖' },
@@ -83,6 +88,7 @@ export default {
     },
     {
       text: '2匹',
+      collapsed: false,
       items: [
         { text: '2匹单冷', link: '/志高移动空调/基础参数/2匹单冷' },
         { text: '2匹冷暖', link: '/志高移动空调/基础参数/2匹冷暖' },
@@ -90,9 +96,21 @@ export default {
     },
   ],
 
+  '/志高移动空调/售前/': [
+    {
+      text: '售前问题',
+      collapsed: false,
+      items: [
+        { text: '售前常见问题', link: '/志高移动空调/售前/售前常见问题' },
+        { text: '售前常见问题2', link: '/志高移动空调/售前/售前常见问题2' },
+      ],
+    },
+  ],
+
   '/荣事达移动空调/基础参数/': [
     {
       text: '1匹',
+      collapsed: false,
       items: [
         { text: '小1匹单冷', link: '/荣事达移动空调/基础参数/小1匹单冷' },
         { text: '1匹单冷', link: '/荣事达移动空调/基础参数/1匹单冷' },
@@ -100,6 +118,7 @@ export default {
     },
     {
       text: '1.5匹',
+      collapsed: false,
       items: [
         { text: '1.5匹单冷', link: '/荣事达移动空调/基础参数/1.5匹单冷' },
         { text: '1.5匹冷暖', link: '/荣事达移动空调/基础参数/1.5匹冷暖' },
@@ -107,6 +126,7 @@ export default {
     },
     {
       text: '2匹',
+      collapsed: false,
       items: [
         { text: '2匹单冷', link: '/荣事达移动空调/基础参数/2匹单冷' },
         { text: '2匹冷暖', link: '/荣事达移动空调/基础参数/2匹冷暖' },
@@ -117,10 +137,25 @@ export default {
   '/德姆勒挂机空调/基础参数/': [
     {
       text: '德穆勒挂机空调参数',
+      collapsed: false,
       items: [
         { text: '1匹', link: '/德姆勒挂机空调/基础参数/1匹' },
         { text: '1.5匹', link: '/德姆勒挂机空调/基础参数/1.5匹' },
         { text: '2匹', link: '/德姆勒挂机空调/基础参数/2匹' },
+      ],
+    },
+  ],
+
+  '/开发测试/格式测试/': [
+    {
+      text: '测试栏目',
+      collapsed: false,
+      items: [
+        { text: '自定义语法测试', link: '/开发测试/格式测试/自定义语法测试' },
+        { text: '标准测试', link: '/开发测试/格式测试/标准测试' },
+        { text: '笔记', link: '/开发测试/格式测试/笔记' },
+        { text: '代码块测试', link: '/开发测试/格式测试/代码块测试' },
+        { text: 'markdown测试', link: '/开发测试/格式测试/markdown测试' },
       ],
     },
   ],

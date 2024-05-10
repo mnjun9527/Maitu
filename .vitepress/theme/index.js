@@ -13,8 +13,39 @@ import { useRoute } from 'vitepress';
 // 只需添加以下一行代码，引入时间线样式
 import 'vitepress-markdown-timeline/dist/theme/index.css';
 
-/** @type {import('vitepress').Theme} */
+/* @type {import('vitepress').Theme} */
+
 export default {
+  //添加谷歌字体
+  head: [
+    [
+      'link',
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+      // would render:
+      //
+      // <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    ],
+
+    [
+      'script',
+      { id: 'register-sw' },
+      `;(() => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js')
+        }
+      })()`,
+      // would render:
+      //
+      // <script id="register-sw">
+      // ;(() => {
+      //   if ('serviceWorker' in navigator) {
+      //     navigator.serviceWorker.register('/sw.js')
+      //   }
+      // })()
+      // </script>
+    ],
+  ],
+
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {

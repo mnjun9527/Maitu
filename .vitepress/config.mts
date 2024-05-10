@@ -44,6 +44,7 @@ export default defineConfig({
 
     //侧边栏导入
     sidebar: { ...sidebar } as any,
+
     // sidebar: [
     //   {
     //     text: '儿童款',
@@ -84,6 +85,14 @@ export default defineConfig({
     //   },
     // ],
 
+    outline: {
+      level: [2, 3], // 显示2-4级标题
+      // level: 'deep', // 显示2-6级标题
+      label: '当前页大纲', // 文字显示
+    },
+    // outline:false, // 关闭标题显示
+    // outlineTitle:'当前页大纲', //老方式设置标题
+
     footer: {
       //message: 'Released under the MIT License.',
       //这里是页脚
@@ -106,6 +115,11 @@ export default defineConfig({
     //行号
     lineNumbers: false,
   },
+
+  //appearance:true, //默认浅色且开启切换
+  //启用深色模式
+  appearance: 'dark',
+  // appearance:false, // 关闭
 });
 
 /*nav: [
