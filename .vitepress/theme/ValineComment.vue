@@ -2,7 +2,6 @@
   <div class="page">
     <section class="page-edit">
       <div class="page-edit-read">
-        <!-- id 将作为查询条件 -->
         <span class="leancloud-visitors" data-flag-title="Your Article Title">
           <em class="post-meta-item-text">阅读量： </em>
           <i class="leancloud-visitors-count"></i>
@@ -14,43 +13,48 @@
 </template>
 
 <script setup>
-import { watch } from "vue";
+import { watch, onMounted } from "vue";
 import { useRoute } from "vitepress";
-import Valine from 'valine';
-
 
 const route = useRoute();
 
-let valine;
+let valineInitialized = false;
 
-const initValine = () => {
-  let path = location.origin + location.pathname;
-  document.getElementsByClassName("leancloud-visitors")[0].id = path;
-  valine.init({
-    el: "#vcomments",
-    appId: "7s1VNathIn6To7Kwv4WJ1pY8-gzGzoHsz",
-    appKey: "EmvSEF656XK6QEVgPRFiXd4B",
-    notify: false,
-    verify: false,
-    path: path,
-    visitor: true,
-    avatar: "mm",
-    placeholder: "来都来了，不留点啥吗",
-  });
+const initValine = async () => {
+  if (typeof window !== 'undefined' && !valineInitialized) {
+    valineInitialized = true; // 防止重复初始化
+
+    // 动态导入 Valine
+    const Valine = (await import('valine')).default;
+
+    let path = location.origin + location.pathname;
+    document.getElementsByClassName("leancloud-visitors")[0].id = path;
+
+    new Valine({
+      el: "#vcomments",
+      appId: "7s1VNathIn6To7Kwv4WJ1pY8-gzGzoHsz",
+      appKey: "EmvSEF656XK6QEVgPRFiXd4B",
+      notify: false,
+      verify: false,
+      path: path,
+      visitor: true,
+      avatar: "mm",
+      placeholder: "来都来了，不留点啥吗",
+    });
+  }
 };
+
+onMounted(() => {
+  initValine(); // 初始化 Valine
+});
 
 watch(
   () => route.path,
   () => {
     console.log("监听路由变化");
-    initValine();
+    initValine(); // 路由变化时重新初始化 Valine
   }
 );
-
-setTimeout(() => {
-  valine = new Valine();
-  initValine();
-}, 1000);
 </script>
 
 <style scoped>
