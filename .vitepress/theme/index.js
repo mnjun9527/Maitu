@@ -35,7 +35,7 @@ import notice from "./components/notice.vue"
 //代码组图标样式
 // import 'virtual:group-icons.css' //代码组样式
 //留言板
-import MyLayout from './MyLayout.vue'
+// import MyLayout from './MyLayout.vue'
 
 
 export default {
@@ -52,10 +52,10 @@ export default {
     //   "script",
     //   { src: '/Valine.min.js'},
     // ],
-    [
-      'script',
-      { src: '/public/Valine.min.js'}, // 引入 Valine 脚本
-    ],
+    // [
+    //   'script',
+    //   { src: '/public/Valine.min.js'}, // 引入 Valine 脚本
+    // ],
 
     [
       'script',
@@ -79,7 +79,7 @@ export default {
 
   extends: DefaultTheme,
  
-  Layout: MyLayout,
+  // Layout: MyLayout,
   
   // layout() {
   //   return h(MyLayout, null, {
