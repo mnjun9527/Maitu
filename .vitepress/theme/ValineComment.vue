@@ -18,43 +18,48 @@ import { useRoute } from "vitepress";
 
 const route = useRoute();
 
-let valineInitialized = false;
-
-const initValine = async () => {
-  if (typeof window !== 'undefined' && !valineInitialized) {
-    valineInitialized = true; // 防止重复初始化
-
-    // 动态导入 Valine
-    const Valine = (await import('valine')).default;
-
-    let path = location.origin + location.pathname;
-    document.getElementsByClassName("leancloud-visitors")[0].id = path;
-
-    new Valine({
-      el: "#vcomments",
-      appId: "7s1VNathIn6To7Kwv4WJ1pY8-gzGzoHsz",
-      appKey: "EmvSEF656XK6QEVgPRFiXd4B",
-      notify: false,
-      verify: false,
-      path: path,
-      visitor: true,
-      avatar: "mm",
-      placeholder: "来都来了，不留点啥吗",
-    });
-  }
+const initValine = () => {
+  let path = location.origin + location.pathname;
+  document.getElementsByClassName("leancloud-visitors")[0].id = path;
+  
+  new Valine({
+    el: "#vcomments",
+    appId: "7s1VNathIn6To7Kwv4WJ1pY8-gzGzoHsz",
+    appKey: "EmvSEF656XK6QEVgPRFiXd4B",
+    notify: false,
+    verify: false,
+    path: path,
+    visitor: true,
+    avatar: "mm",
+    placeholder: "请在这里留下你的留言，如果上面填写了邮箱还能收到邮件哟，地址是点击头像跳转的地址",
+  });
 };
 
-onMounted(() => {
-  initValine(); // 初始化 Valine
-});
+const remoteImport = (url) => {
+  return new Promise((resolve) => {
+    const head = document.getElementsByTagName("head")[0];
+    const script = document.createElement("script");
+    script.setAttribute("type", "text/javascript");
+    script.setAttribute("src", url);
+    head.appendChild(script);
+
+    script.onload = function () {
+      resolve();
+    };
+  });
+};
 
 watch(
   () => route.path,
   () => {
     console.log("监听路由变化");
-    initValine(); // 路由变化时重新初始化 Valine
+    initValine();
   }
 );
+
+onMounted(() => {
+  remoteImport('//unpkg.com/valine/dist/Valine.min.js').then(() => initValine());
+});
 </script>
 
 <style scoped>
