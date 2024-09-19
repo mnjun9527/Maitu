@@ -1,0 +1,439 @@
+
+
+
+
+
+/* 自定义一级标题的颜色*/
+.vp-doc h1 {
+  font-size: 25px;
+  background: -webkit-linear-gradient(-45deg, #e43498 5%, #5ad7dd 15%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+h1.name{
+  left: 100px !important;
+}
+
+.main .text{
+  font-size: 30px !important;
+}
+
+/* h1.name{
+  background-attachment:scroll;
+  background-clip:text;
+  background-color:rgba(0, 0, 0, 0);
+  background-image:linear-gradient(120deg, rgb(93, 103, 232), rgb(239, 68, 68));
+  background-origin:padding-box;
+  background-position-x:0%;
+  background-position-y:0%;
+  background-repeat:repeat;
+  background-size:auto;
+  box-sizing:border-box;
+  color:rgba(0, 0, 0, 0);
+  color-scheme:dark;
+  display:inline;
+  font-family:Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-optical-sizing:auto;
+  font-size:72px;
+  font-synthesis-small-caps:none;
+  font-synthesis-style:auto;
+  font-synthesis-weight:none;
+  font-weight:700;
+  height:auto;
+  letter-spacing:-0.4px;
+  line-height:64px;
+  overflow-wrap:break-word;
+  text-rendering:optimizelegibility;
+  text-size-adjust:100%;
+  text-wrap:wrap;
+  white-space-collapse:reserve;
+  width:auto;
+  -webkit-font-smoothing:antialiased;
+  -webkit-text-fill-color:rgba(0, 0, 0, 0);
+} */
+
+/* 自定义二级标题的颜色*/
+.vp-doc h2 {
+  font-size: 20px !important;
+  border-bottom: 4px solid rgba(184, 66, 127, 0.5);
+  line-height: 35px;
+  padding-left: 5px;
+  margin: 0;
+  border-top: 0;
+  font-weight: 600;
+  color: #16a0db;
+}
+/* 自定义二级标题的样式*/
+.vp-doc h2:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  height: 10px;
+  border-top-right-radius: 22px;
+  background: linear-gradient(90deg, transparent, #16a0db);
+  max-width: 50vw;
+}
+
+/* 自定义code*/
+.VPDoc .container .vp-doc :not(pre) > code {
+  color: #e44a8a;
+  border: 1px solid rgba(184, 66, 100, 0.25);
+  background-color: rgba(184, 66, 113, 0.05);
+  font-size: 16px;
+}
+
+/* 自定义三级标题的样式*/
+
+.vp-doc h3 {
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 600;
+  color: #16a0db;
+  letter-spacing: -0.01em;
+  line-height: 28px;
+}
+/* 自定义四级标题的样式*/
+h4 {
+  margin: 0.4em auto 0.1em;
+  font-size: 16px;
+  padding-left: 6px;
+  padding-right: 6px;
+  display: inline-block;
+  border: 1px solid #16a0db;
+  border-top: 4px solid #16a0db;
+  color: #16a0db;
+}
+/* .VPDoc .container .vp-doc h4 {
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: 600;
+  color: #16a0db;
+} */
+
+/* 自定义引用块的样式 > s */
+.vp-doc blockquote {
+  margin: 0;
+  padding: 0.5rem;
+  border-left: 6px solid #198aba;
+  border-radius: 5px;
+  background: rgba(66, 139, 184, 0.1);
+}
+
+/* 自定义加粗**的样式*/
+strong {
+  color: #e44a8a;
+  &::before {
+    content: '[ ';
+  }
+  &::after {
+    content: ' ]';
+  }
+}
+
+/* 图片放大 */
+.medium-zoom-overlay {
+  z-index: 20;
+}
+.medium-zoom-image {
+  z-index: 9999 !important; /* 给的值是21，但是实测盖不住，直接999 */
+}
+
+.content img {
+  max-width: 20%; /* 图片宽度不超过其容器宽度 */
+  height: auto; /* 高度自动缩放以保持图像比例 */
+}
+
+/** 小标签 **/
+
+font {
+  display: inline;
+  padding: 0.2em 0.6em;
+  font-size: 90%;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  /*white-space: nowrap;*/
+  vertical-align: baseline;
+  border-radius: 0.1rem;
+  border-radius: 6px;
+  background-color: var(--spannote-color);
+}
+font[title='red'] {
+  background-color: #e91e64;
+}
+font[title='blue'] {
+  background-color: #02aaf4;
+}
+font[title='yellow'] {
+  background-color: #ffc50a;
+}
+font[title='green'] {
+  background-color: #8bc34a;
+}
+font[title='gray'] {
+  background-color: #4c4c4c;
+}
+
+/** 彩虹变换字体特效（来自黑石博客） **/
+@-webkit-keyframes rainbowan {
+  to {
+    background-position: -2000vw;
+  }
+}
+@keyframes rainbowan {
+  to {
+    background-position: -2000vw;
+  }
+}
+span[alt='rainbow'],
+span[alt='rainbow'] * {
+  padding-top: 3px;
+  background-image: linear-gradient(
+    to left,
+    orangered,
+    orange,
+    gold,
+    lightgreen,
+    cyan,
+    dodgerblue,
+    mediumpurple,
+    hotpink,
+    orangered
+  );
+  background-size: 110vw;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-animation: rainbowan 60s linear infinite;
+  animation: rainbowan 60s linear infinite;
+}
+
+/** 一款时尚的span字体，来自QinXS **/
+
+span[alt='modern'] {
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-family: var(--body-font);
+  font-size: 1em;
+  letter-spacing: 0.2em;
+  color: red;
+  text-shadow: 0 8px 9px #c4b59d, 0 -2px 1px #fff;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #ece4d9 0, #e9dfd1 100%);
+}
+
+/** 强调型文本 **/
+
+span[alt='emp'] {
+  border-bottom: 4px dotted #fe5f58;
+}
+span[alt='underline'] {
+  border-bottom: 2px solid #fe5f58;
+}
+span[alt='wavy'] {
+  text-decoration-style: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: #fe5f58;
+}
+
+/** 隐藏型文本 **/
+
+span[alt='hide'] {
+  color: transparent;
+  background: #a1a1a1;
+  border-radius: 2px;
+  -webkit-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+}
+span[alt='hide']:hover {
+  color: var(--hidetext-color);
+  background: 0 0;
+}
+
+/* h2 {
+  margin: 1.2em auto 1em;
+  font-size: 1.8em;
+  border-bottom: 2px solid var(--titlebefore-color);
+} */
+
+/* 风车图标 */
+/* h2::before {
+  content: '\e689' !important; 
+  color: var(--titlebefore-color);
+  font-family: 'iconfont';
+} */
+
+/* h2标题前缀旋转动画 */
+/* @-moz-keyframes avatar_turn_around {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes avatar_turn_around {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes avatar_turn_around {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes avatar_turn_around {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+h2:before {
+  display: inline-block;
+  -webkit-animation: avatar_turn_around 1s linear infinite;
+  -moz-animation: avatar_turn_around 1s linear infinite;
+  -o-animation: avatar_turn_around 1s linear infinite;
+  -ms-animation: avatar_turn_around 1s linear infinite;
+  animation: avatar_turn_around 1s linear infinite;
+  font-size: 34px;
+  margin-left: -29px;
+} */
+
+/* h2标题内容稍稍偏右一点 */
+/* h2 * {
+  margin-left: 0.18rem;
+}
+#write > h2.md-focus:before {
+  color: var(--focus-color);
+}
+#write > h2.md-focus {
+  border-bottom-color: var(--focus-color);
+}
+
+.about-content-description h2:before {
+  content: none !important;
+}
+.about-content-description h2 {
+  border-bottom: none;
+} */
+
+/* h3 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #16a0db;
+  padding-left: 9px;
+  border-left: 5px solid #16a0db;
+} */
+
+.v[data-class=v] .vwrap .vheader .vinput {
+  width: 33.33%;
+  border-bottom: 1px #52525952 dashed;
+}
+
+.dark .v[data-class=v] .vwrap {
+  border: 1px solid #52525952 !important;
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 32 34 / var(--tw-bg-opacity));
+}
+
+
+
+
+/* .item3{
+  border: 1px solid #52525952 !important;
+} */
+
+.page .v[data-class=v] .vwrap .vheader .vinput {
+  width: 33.33%;
+  border-bottom: 1px #52525952 dashed;
+}
+
+
+.item3 .vinput {
+  &:focus {
+    border-bottom: 1px dashed #5d67e8e6 !important; 
+    outline: none; /* 去掉默认的轮廓（可选） */
+  }
+}
+
+
+
+.vnick{
+  color: #5d67e8e6 !important;
+}
+
+
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat{
+  margin-right: .375rem;
+  border-radius: .375rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  color: #5d67e8e6 !important;
+  border: 1px solid #5d67e8e6 !important;
+  padding-left: .375rem;
+  padding-right: .375rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  --tw-text-opacity: 1;
+  &:hover {
+    background-color: #5d67e8e6;
+    color: #fff !important;
+  }
+}
+

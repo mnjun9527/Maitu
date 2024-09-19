@@ -1,0 +1,16 @@
+自带的社交图标有以下这些:
+export type SocialLinkIcon =
+    | 'discord'
+    | 'facebook'
+    | 'github'
+    | 'instagram'
+    | 'linkedin'
+    | 'mastodon'
+    | 'slack'
+    | 'twitter'
+    | 'x'
+    | 'youtube'
+    | { svg: string }
+
+其他图标:https://www.iconfont.cn/
+我这里使用 阿里旗下的：iconfont，搜索 微信 找到合适的 下载 - 复制svg代码
