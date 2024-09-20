@@ -168,6 +168,23 @@ export default [
           },
         ],
       },
+      {
+        text: '雅鹿电热毯',
+        items: [
+          {
+            text: '基础参数',
+            link: '/雅鹿电热毯/基础参数/郁金香款',
+          },
+          {
+            text: '腾讯云',
+            link: '/tencent/',
+          },
+          {
+            text: '华为云',
+            link: '/huawei/',
+          },
+        ],
+      },
     ],
   },
   {
@@ -188,8 +205,8 @@ export default [
             link: '/css/',
           },
           {
-            text: 'JavaScript',
-            link: '/js/',
+            text: '售后',
+            link: '/四季沐歌热水器/售后/免安装款',
           },
         ],
       },
