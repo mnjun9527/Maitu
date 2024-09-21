@@ -1,8 +1,8 @@
 /* 以前的vp-c-brand已弃用 */
 :root {
-  --vp-c-brand-1: #5d67e8e6;
-  --vp-c-brand-2: #5d67e8e6;
-  --vp-c-brand-3: #5d67e8e6;
+  --vp-c-brand-1: #8cccd5;
+  --vp-c-brand-2: #6aa1b7;
+  --vp-c-brand-3: #5086a1;
   --vp-fk-srk-bg: rgba(255 255 255 / 40%);
 
   /* 侧边栏选中后的颜色 */
@@ -14,11 +14,12 @@
 /* 黑夜模式下的颜色 */
 .dark {
   /* 按钮的背景颜色和导航栏下拉列表的焦点颜色 */
-  --vp-c-brand-1: #5d67e8e6;
-  --vp-c-brand-2: #5d67e8e6 ;
-  --vp-c-brand-3: #5d67e8e6;
-  --vp-fk-srk-bg: rgba(22 22 22 / 40%);
-
+  --vp-c-brand-1: #8cccd5;
+  --vp-c-brand-2: #6aa1b7;
+  --vp-c-brand-3: #5086a1;
+  /* --vp-fk-srk-bg: rgba(22 22 22 / 40%); */
+  --vp-fk-srk-bg: #1b1b1f;
+  
   /* 侧边栏选中后的颜色 */
   --vt-c-button-hover-active-bg:rgba(66, 139, 184, 0.1)
 }

@@ -82,12 +82,12 @@ h1.name{
 }
 
 /* 自定义code*/
-.VPDoc .container .vp-doc :not(pre) > code {
+/* .VPDoc .container .vp-doc :not(pre) > code {
   color: #e44a8a;
   border: 1px solid rgba(184, 66, 100, 0.25);
   background-color: rgba(184, 66, 113, 0.05);
   font-size: 16px;
-}
+} */
 
 /* 自定义三级标题的样式*/
 
@@ -380,11 +380,15 @@ h2:before {
   border-left: 5px solid #16a0db;
 } */
 
-.v[data-class=v] .vwrap .vheader .vinput {
+
+/* 留言板的三個輸入框 */
+.page .v[data-class=v] .vwrap .vheader .vinput {
   width: 33.33%;
   border-bottom: 1px #52525952 dashed;
 }
 
+
+/* 黑夜模式下的留言板的邊框和背景顔色 */
 .dark .v[data-class=v] .vwrap {
   border: 1px solid #52525952 !important;
   --tw-bg-opacity: 1;
@@ -392,32 +396,22 @@ h2:before {
 }
 
 
-
-
-/* .item3{
-  border: 1px solid #52525952 !important;
-} */
-
-.page .v[data-class=v] .vwrap .vheader .vinput {
-  width: 33.33%;
-  border-bottom: 1px #52525952 dashed;
-}
-
-
+/* 三個輸入框激活后的下邊框 */
 .item3 .vinput {
   &:focus {
     border-bottom: 1px dashed #5d67e8e6 !important; 
-    outline: none; /* 去掉默认的轮廓（可选） */
+    outline: none; 
   }
 }
 
 
-
-.vnick{
+/* 留言ID的顔色 */
+/* .vnick{
   color: #5d67e8e6 !important;
-}
+} */
 
 
+/* 回復按鈕的樣式 */
 .v[data-class=v] .vcards .vcard .vh .vmeta .vat{
   margin-right: .375rem;
   border-radius: .375rem;
@@ -437,3 +431,11 @@ h2:before {
   }
 }
 
+
+/* 側邊欄和導航欄的字體加粗 */
+.text,
+.title,
+.outline-link{
+  font-weight: bold !important;
+
+}
