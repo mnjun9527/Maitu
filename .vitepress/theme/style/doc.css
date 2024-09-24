@@ -89,6 +89,13 @@ h1.name{
   font-size: 16px;
 } */
 
+.VPDoc .container .vp-doc :not(pre) > code {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+
 /* 自定义三级标题的样式*/
 
 .vp-doc h3 {
@@ -396,6 +403,7 @@ h2:before {
 }
 
 
+
 /* 三個輸入框激活后的下邊框 */
 .item3 .vinput {
   &:focus {
@@ -404,6 +412,10 @@ h2:before {
   }
 }
 
+/* 导航栏的背景颜色 */
+/* .wrapper{
+  background-color: rgb(27,27,31) !important;
+} */
 
 /* 留言ID的顔色 */
 /* .vnick{
@@ -439,3 +451,60 @@ h2:before {
   font-weight: bold !important;
 
 }
+
+
+
+
+/* ===========这是对有侧边栏的设置=========== */
+/* 侧边栏左内边距22 */
+/* .VPSidebar{
+  padding-left: 22px !important;
+  padding-right: 0px !important;
+  width: 240px !important;
+} */
+/* 左上角logo 左内边距 */
+/* .title{
+  padding-left: 5px !important;
+} */
+
+/* 文档整个区域左内边距为0 */
+/* .VPContent{
+  padding-left: 0px !important;
+} */
+
+/* 文档区域左内边距为0，宽度1200px */
+/* .vp-doc{
+  padding-left: 0px !important;
+  width: 1200px !important;
+} */
+
+/* 侧边栏的宽度为150 */
+/* .aside{
+  width: 150px !important;
+} */
+
+
+
+
+/* ==========这是针对无侧边栏的情况========== */
+
+/* .VPDoc.has-aside:not(.has-sidebar) {
+  .container{ */
+    /* 文档区域外边距为100 */
+    /* margin-left: 100px;
+  } */
+  /* 侧边栏距离右边0像素 */
+  /* .aside-container{
+    right: 0px !important;
+  }
+} */
+
+
+
+
+/* 留言板和阅读量的位置调整 */
+/* .page-edit-read,
+.v[data-class=v] .vwrap,
+.prev-next {
+  width: 1200px;
+} */

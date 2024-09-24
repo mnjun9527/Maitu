@@ -1,5 +1,12 @@
 /* .vitepress/theme/style/vp-code-group.css */
 
+.dark{
+  --vp-c-bg-alt:red !important
+}
+
+
+
+
 /* 代码块tab */
 .vp-code-group .tabs {
     padding-top: 30px;
@@ -22,6 +29,7 @@
   .vp-code-group {
     color: var(--vp-c-black-soft);
     border-radius: 8px;
+/* 设置盒子的阴影效果，水平偏移量为0，垂直偏移量为10px，模糊半径为30px，扩展半径为0，颜色为rgba(0, 0, 0, 0.4) */
     box-shadow: 0 10px 30px 0 rgb(0 0 0 / 40%);
   }
   

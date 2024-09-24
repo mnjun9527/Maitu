@@ -197,12 +197,12 @@ export default [
         items: [
           {
             //下拉列表选项 对
-            text: 'HTML',
-            link: '/html/',
+            text: '基础参数',
+            link: '/四季沐歌热水器/基础参数/免安装款',
           },
           {
-            text: 'CSS',
-            link: '/css/',
+            text: '售前',
+            link: '/四季沐歌热水器/售前/售前常见问题',
           },
           {
             text: '售后',
@@ -380,7 +380,7 @@ export default [
         items: [
           {
             text: '售后流程',
-            link: '/aliyun/',
+            link: '/培训模块/售后流程/售后流程',
           },
           {
             text: '售后进阶',
