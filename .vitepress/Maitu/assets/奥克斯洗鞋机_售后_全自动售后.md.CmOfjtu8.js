@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./chunks/framework.4vnJFChu.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"奥克斯洗鞋机/售后/全自动售后.md","filePath":"奥克斯洗鞋机/售后/全自动售后.md","lastUpdated":1726751611000}'),r={name:"奥克斯洗鞋机/售后/全自动售后.md"};function o(s,_,c,n,d,p){return a(),t("div")}const f=e(r,[["render",o]]);export{m as __pageData,f as default};
