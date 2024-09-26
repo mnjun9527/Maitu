@@ -9,7 +9,8 @@ import sidebar from './sidebar.mts';
 import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 //自定义代码组图标
 // import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
-
+//自定义图标
+// import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 // https://vitepress.dev/reference/site-config
 //自动侧边栏插件  待学习
 // import { generateSidebar } from 'vitepress-sidebar';
