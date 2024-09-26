@@ -32,10 +32,12 @@ import ArticleMetadata from "./components/ArticleMetadata.vue"
 import backtotop from "./components/backtotop.vue"
 //公告二维码
 import notice from "./components/notice.vue"
-//代码组图标样式
-// import 'virtual:group-icons.css' //代码组样式
+
+//代码组图标
+import 'virtual:group-icons.css' //代码组样式
 //留言板
 import MyLayout from './MyLayout.vue'
+
 
 
 export default {
@@ -113,6 +115,10 @@ export default {
       lazyLoading: true,
     },
   },
+
+
+
+
   // 图片放大代码
   setup() {
     const route = useRoute();

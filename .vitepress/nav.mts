@@ -152,23 +152,6 @@ export default [
         ],
       },
       {
-        text: '奥克斯水暖毯',
-        items: [
-          {
-            text: '阿里云',
-            link: '/aliyun/',
-          },
-          {
-            text: '腾讯云',
-            link: '/tencent/',
-          },
-          {
-            text: '华为云',
-            link: '/huawei/',
-          },
-        ],
-      },
-      {
         text: '雅鹿电热毯',
         items: [
           {
@@ -207,6 +190,23 @@ export default [
           {
             text: '售后',
             link: '/四季沐歌热水器/售后/免安装款',
+          },
+        ],
+      },
+      {
+        text: '容声热水器',
+        items: [
+          {
+            text: '阿里云',
+            link: '/aliyun/',
+          },
+          {
+            text: '腾讯云',
+            link: '/tencent/',
+          },
+          {
+            text: '华为云',
+            link: '/huawei/',
           },
         ],
       },
@@ -311,40 +311,40 @@ export default [
   },
   {
     //导航栏名称
-    text: '备用',
+    text: '坐垫&热敷包',
     items: [
       {
         //下拉列表分类名称
-        text: '系统课程',
+        text: '雅鹿加热坐垫',
         items: [
           {
             //下拉列表选项 对
-            text: 'HTML',
+            text: '基础参数',
             link: '/html/',
           },
           {
-            text: 'CSS',
+            text: '售前',
             link: '/css/',
           },
           {
-            text: 'JavaScript',
+            text: '售后',
             link: '/js/',
           },
         ],
       },
       {
-        text: '云服务',
+        text: '雅鹿海盐热敷包',
         items: [
           {
-            text: '阿里云',
+            text: '基础参数',
             link: '/aliyun/',
           },
           {
-            text: '腾讯云',
+            text: '售前',
             link: '/tencent/',
           },
           {
-            text: '华为云',
+            text: '售后',
             link: '/huawei/',
           },
         ],
@@ -366,11 +366,11 @@ export default [
             link: '/培训模块/售前流程培训/售前流程',
           },
           {
-            text: '售前进阶',
+            text: '售前进阶(暂无)',
             link: '/css/',
           },
           {
-            text: '经典案例',
+            text: '经典案例(暂无)',
             link: '/js/',
           },
         ],
@@ -383,11 +383,11 @@ export default [
             link: '/培训模块/售后流程/售后流程',
           },
           {
-            text: '售后进阶',
+            text: '售后进阶(暂无)',
             link: '/tencent/',
           },
           {
-            text: '经典案例',
+            text: '经典案例(暂无)',
             link: '/huawei/',
           },
         ],
@@ -405,7 +405,7 @@ export default [
           },
           {
             text: '聚水潭',
-            link: '/huawei/',
+            link: '/培训模块/聚水潭/配件登记',
           },
         ],
       },
@@ -417,16 +417,16 @@ export default [
     items: [
       {
         //下拉列表分类名称
-        text: '测试',
+        text: '开发测试',
         items: [
           {
             //下拉列表选项 对
-            text: '格式测试',
-            link: '/开发测试/格式测试/markdown测试',
+            text: '标准测试',
+            link: '/开发测试/标准测试',
           },
           {
-            text: 'CSS',
-            link: '/css/',
+            text: '时间线测试',
+            link: '/开发测试/时间线测试',
           },
           {
             text: 'JavaScript',

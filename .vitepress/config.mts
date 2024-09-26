@@ -6,7 +6,9 @@ import timeline from 'vitepress-markdown-timeline';
 //侧边栏
 import sidebar from './sidebar.mts';
 //代码组图标
-import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+// import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+//自定义代码组图标
+import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 //自定义图标
 // import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 // https://vitepress.dev/reference/site-config
@@ -219,7 +221,16 @@ export default defineConfig({
 
   vite: { 
     plugins: [
-      groupIconVitePlugin() //代码组图标
+      groupIconVitePlugin({ 
+        customIcon: {
+          hs: localIconLoader(import.meta.url, '../public/svg/hs.svg'), //本地ts图标导入
+          jsA: 'logos:square', //js图标
+          md: 'logos:markdown', //markdown图标
+          css: 'logos:css-3', //css图标
+        },
+      }
+        
+      ) //代码组图标
     ],
   },
   // 自定义图标代码
