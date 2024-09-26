@@ -6,7 +6,7 @@ import timeline from 'vitepress-markdown-timeline';
 //侧边栏
 import sidebar from './sidebar.mts';
 //代码组图标
-import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+// import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 //自定义代码组图标
 // import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 //自定义图标
@@ -209,7 +209,7 @@ export default defineConfig({
     //时间线
     config: (md) => {
       md.use(timeline);
-      md.use(groupIconMdPlugin); //代码组图标
+      // md.use(groupIconMdPlugin); //代码组图标
     },
     
     //行号
@@ -221,7 +221,7 @@ export default defineConfig({
 
   vite: { 
     plugins: [
-      groupIconVitePlugin(
+      // groupIconVitePlugin(
       //   { 
       //   customIcon: {
       //     hs: localIconLoader(import.meta.url, '../public/svg/hs.svg'), //本地ts图标导入
@@ -231,7 +231,7 @@ export default defineConfig({
       //   },
       // }
         
-      ) //代码组图标
+      // ) //代码组图标
     ],
   },
   // 自定义图标代码

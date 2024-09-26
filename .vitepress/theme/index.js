@@ -34,7 +34,7 @@ import backtotop from "./components/backtotop.vue"
 import notice from "./components/notice.vue"
 
 //代码组图标
-import 'virtual:group-icons.css' //代码组样式
+// import 'virtual:group-icons.css' //代码组样式
 //留言板
 import MyLayout from './MyLayout.vue'
 
