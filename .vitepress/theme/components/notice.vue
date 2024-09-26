@@ -5,6 +5,8 @@ const visible = ref(true)
 function closeBulletin() {
     visible.value = false
 }
+
+setTimeout(function(){ visible.value = false }, 5000);
 </script>
 
 <template>
@@ -20,12 +22,12 @@ function closeBulletin() {
 
         <div class="bulletin-content">
             <h3 class="bulletin-h3">本次更新：</h3>
-            <p class="bulletin-p">公告待开发 <a class="bulletin-link" href="https://theme-reco.vuejs.press/" target="_blank">QQ245135241</a></p>
-            <p class="bulletin-p">微信：******(无效二维码)</p>
+            <p class="bulletin-p">公告样式，参考自 <a class="bulletin-link" href="https://theme-reco.vuejs.press/" target="_blank">VuePress-Reco</a></p>
+            <p class="bulletin-p">QQ 频道：******(无效二维码)</p>
             <img class="bulletin-img" src="/qrcode.png">
             <hr>
             <div class="btn-group">
-                <a class="btn" href="https://vitepress.dev/zh/" target="_blank">反馈</a>
+                <a class="btn" href="https://vitepress.dev/zh/" target="_blank">官网</a>
             </div>
         </div>
     </div>
