@@ -107,6 +107,7 @@ export default defineConfig({
   },
 
   markdown: {
+    math: true, // 启用数学公式
     container: {
       tipLabel: '提示',
       warningLabel: '警告',
