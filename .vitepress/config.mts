@@ -11,9 +11,7 @@ import vue from '@vitejs/plugin-vue';
 // import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 //自定义代码组图标
 // import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
-//自定义图标
-// import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
-// https://vitepress.dev/reference/site-config
+
 //自动侧边栏插件  待学习
 // import { generateSidebar } from 'vitepress-sidebar';
 // const vitepressSidebarOptions = {
@@ -22,20 +20,16 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   title: 'Maitu 商贸',
   description: '产品资料站点',
-  //服务器需要注释下面
   base: '/Maitu/',
-  // 本地编译
-  // base: '/Maitu-master/',
+
   lastUpdated: true, //首次配置不会立即生效，需git提交后爬取时间戳
   //文档目录的路径 报错
   //srcDir: 'docs',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     //路径要放在docs/pubic/目录下
     logo: '/yumao.png',
     // 设置站点标题
     // siteTitle: false, //标题隐藏
-    // 站点地图
     //导航栏
     lastUpdated: {
       text: '最后更新于',
@@ -79,6 +73,7 @@ export default defineConfig({
     //   pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path', // 改成自己的仓库
     //   text: '在GitHub编辑本页'
     // },
+
     //社交链接
     socialLinks: [ 
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }, 
@@ -93,97 +88,9 @@ export default defineConfig({
       }
     ], 
 
-
     //侧边栏导入
     sidebar: { ...sidebar } as any,
-
-    // sidebar: [
-    //   {
-    //     text: '儿童款',
-    //     items: [
-    //       { text: '基础参数', link: '/奥克斯洗鞋机/儿童款/1.基础参数' },
-    //       { text: '产品讲解', link: '/奥克斯洗鞋机/儿童款/2.产品讲解' },
-    //     ],
-    //   },
-
-    //   {
-    //     text: '居家中小款',
-    //     items: [
-    //       { text: '基础参数', link: '/奥克斯洗鞋机/居家中小款/1.基础参数' },
-    //       { text: '产品讲解', link: '/奥克斯洗鞋机/居家中小款/2.产品讲解' },
-    //     ],
-    //   },
-
-    //   {
-    //     text: '豪华大款',
-    //     items: [
-    //       { text: '基础参数', link: '/奥克斯洗鞋机/豪华大款/1.基础参数' },
-    //       { text: '产品讲解', link: '/奥克斯洗鞋机/豪华大款/2.产品讲解' },
-    //     ],
-    //   },
-    //   {
-    //     text: '经典双桶款',
-    //     items: [
-    //       { text: '基础参数', link: '/奥克斯洗鞋机/经典双桶款/1.基础参数' },
-    //       { text: '产品讲解', link: '/奥克斯洗鞋机/经典双桶款/2.产品讲解' },
-    //     ],
-    //   },
-    //   {
-    //     text: '太空舱款',
-    //     items: [
-    //       { text: '基础参数', link: '/奥克斯洗鞋机/太空舱款/1.基础参数' },
-    //       { text: '产品讲解', link: '/奥克斯洗鞋机/太空舱款/2.产品讲解' },
-    //     ],
-    //   },
-    // ],
-    //自定侧边栏的插件,待研究
-    // sidebar: generateSidebar({
-    //   /*
-    //    * For detailed instructions, see the links below:
-    //    * https://vitepress-sidebar.jooy2.com/guide/api
-    //    */
-    //   documentRootPath: '/docs', //文档根目录
-    //   // scanStartPath: null,
-    //   // resolvePath: null,
-    //   // useTitleFromFileHeading: true,
-    //   // useTitleFromFrontmatter: true,
-    //   // frontmatterTitleFieldName: 'title',
-    //   // useFolderTitleFromIndexFile: false, //是否使用层级首页文件名做分级标题
-    //   // useFolderLinkFromIndexFile: false, //是否链接至层级首页文件
-    //   // hyphenToSpace: true,
-    //   // underscoreToSpace: true,
-    //   // capitalizeFirst: false,
-    //   // capitalizeEachWords: false,
-    //   collapsed: false, //折叠组关闭
-    //   collapseDepth: 2, //折叠组2级菜单
-    //   // sortMenusByName: false,
-    //   // sortMenusByFrontmatterOrder: false,
-    //   // sortMenusByFrontmatterDate: false,
-    //   // sortMenusOrderByDescending: false,
-    //   // sortMenusOrderNumericallyFromTitle: false,
-    //   // sortMenusOrderNumericallyFromLink: false,
-    //   // frontmatterOrderDefaultValue: 0,
-    //   // manualSortFileNameByPriority: ['first.md', 'second', 'third.md'], //手动排序，文件夹不用带后缀
-    //   removePrefixAfterOrdering: false, //删除前缀，必须与prefixSeparator一起使用
-    //   prefixSeparator: '.', //删除前缀的符号
-    //   // excludeFiles: ['first.md', 'secret.md'],
-    //   // excludeFilesByFrontmatterFieldName: 'exclude',
-    //   // excludeFolders: ['secret-folder'],
-    //   // includeDotFiles: false,
-    //   // includeRootIndexFile: false,
-    //   // includeFolderIndexFile: false, //是否包含层级主页
-    //   // includeEmptyFolder: false,
-    //   // rootGroupText: 'Contents',
-    //   // rootGroupLink: 'https://github.com/jooy2',
-    //   // rootGroupCollapsed: false,
-    //   // convertSameNameSubFileToGroupIndexPage: false,
-    //   // folderLinkNotIncludesFileName: false,
-    //   // keepMarkdownSyntaxFromTitle: false,
-    //   // debugPrint: false,
-    // }),
-    
-
-
+    //右边大纲
     outline: {
       level: [2, 3], // 显示2-4级标题
       // level: 'deep', // 显示2-6级标题
@@ -198,8 +105,8 @@ export default defineConfig({
       copyright: 'Copyright © 2024-present 迈途商贸',
     },
   },
+
   markdown: {
-    
     container: {
       tipLabel: '提示',
       warningLabel: '警告',
@@ -217,9 +124,6 @@ export default defineConfig({
     
     //行号
     lineNumbers: false,
-
-
-
   },
 
   vite: { 
@@ -233,35 +137,14 @@ export default defineConfig({
       //     css: 'logos:css-3', //css图标
       //   },
       // }
-        
       // ) //代码组图标
     ],
   },
 
 
-
-  
-  // 自定义图标代码
-  // vite: {
-  //   plugins: [
-  //     groupIconVitePlugin({ 
-  //       customIcon: {
-  //         ts: localIconLoader(import.meta.url, '../public/svg/typescript.svg'), //本地ts图标导入
-  //         js: 'logos:javascript', //js图标
-  //         md: 'logos:markdown', //markdown图标
-  //         css: 'logos:css-3', //css图标
-  //       },
-  //     })
-  //   ],
-  // },
-  // 站点地图
-  // sitemap: {
-  //   hostname: 'http://localhost:5174/Maitu/',
-  // },
   //appearance:true, //默认浅色且开启切换
   //启用深色模式
   appearance: 'dark',
-  // appearance:false, // 关闭
   
 
 
@@ -269,8 +152,10 @@ export default defineConfig({
   // head: [
   //   ['link',{ rel: 'icon', href: '/苹果.png'}],
   // ],
+
   //添加谷歌字体
   head: [
+    
     [
       'link',
       { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
