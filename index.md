@@ -30,6 +30,5 @@ features:
     details: 如果某个产品的资料不完善或者您想提交产品信息<br>请点击这里向我们提交, 感谢!
     link: https://www.baidu.com
 ---
-<HomeUnderline />
 
-<!-- <notice /> -->
+

@@ -53,8 +53,8 @@ export default {
     [
       "script",
       // { src: '/Valine.min.js'},
-      { src: 'https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js'},
-      
+      { src: 'https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js' },
+
     ],
     // [
     //   'script',
@@ -82,38 +82,41 @@ export default {
   ],
 
   extends: DefaultTheme,
- 
+
   Layout: MyLayout,
-  
+
   // layout() {
   //   return h(MyLayout, null, {
   //     'doc-footer-before': () => h(backtotop), // 返回顶部组件
   //     'layout-top': () => h(notice), // 二维码组件
   //   });
   // },
-  
-  enhanceApp({app}) { 
+
+  enhanceApp({ app }) {
     // 注册全局组件 示例
-    app.component('Mycomponent' , Mycomponent)
+    app.component('Mycomponent', Mycomponent)
     // 注册全局组件  卡片连接
-    app.component('Linkcard' , Linkcard)
+    app.component('Linkcard', Linkcard)
     // 注册全局组件西瓜视频
-    app.component('xgplayer' , xgplayer)
-     // 注册全局组件 主页横线
+    app.component('xgplayer', xgplayer)
+    // 注册全局组件 主页横线
     //  app.component('HomeUnderline' , HomeUnderline)
-     //标题下添加时间
+    //标题下添加时间
     //  app.component('update' , update)
-     //标题下添加时间 字数及阅读时间
-     app.component('ArticleMetadata' , ArticleMetadata)
+    //标题下添加时间 字数及阅读时间
+    app.component('ArticleMetadata', ArticleMetadata)
   },
 
 
 
   markdown: {
+
     image: {
       // 启用懒加载
       lazyLoading: true,
     },
+
+
   },
 
 

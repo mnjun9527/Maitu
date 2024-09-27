@@ -5,6 +5,8 @@ import nav from './nav.mts';
 import timeline from 'vitepress-markdown-timeline';
 //侧边栏
 import sidebar from './sidebar.mts';
+
+import vue from '@vitejs/plugin-vue';
 //代码组图标
 // import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 //自定义代码组图标
@@ -197,6 +199,7 @@ export default defineConfig({
     },
   },
   markdown: {
+    
     container: {
       tipLabel: '提示',
       warningLabel: '警告',
@@ -220,12 +223,12 @@ export default defineConfig({
   },
 
   vite: { 
-    plugins: [
+    plugins: [   
       // groupIconVitePlugin(
       //   { 
       //   customIcon: {
-      //     hs: localIconLoader(import.meta.url, '../public/svg/hs.svg'), //本地ts图标导入
-      //     jsA: 'logos:square', //js图标
+      //     hs: localIconLoader(import.meta.url, '../public/hs.svg'), //本地ts图标导入
+      //     pnpm: 'logos:square', //js图标
       //     md: 'logos:markdown', //markdown图标
       //     css: 'logos:css-3', //css图标
       //   },
@@ -234,6 +237,10 @@ export default defineConfig({
       // ) //代码组图标
     ],
   },
+
+
+
+  
   // 自定义图标代码
   // vite: {
   //   plugins: [
@@ -278,10 +285,12 @@ export default defineConfig({
     ],
     [
       'script',
-      { src: '/Valine.min.js' }, // 添加 Valine 脚本
+      { src: 'Valine.min.js'}, // 添加 Valine 脚本
     ],
   ],
 
+
+  
 
 
   
