@@ -30,6 +30,12 @@
     color: rgb(135, 135, 135);
   }
 }
+.VPHome .text{
+  font-size: 2.25rem !important;
+}
+
+
+
 
 /* // 主页的背景图片 */
 /* 设置VPContent类的背景图片大小为覆盖整个容器 */
