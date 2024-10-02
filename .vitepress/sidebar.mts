@@ -215,6 +215,16 @@ export default {
     },
   ],
 
+  '奥克斯电热毯/售后/': [
+    {
+      text: '售后问题',
+      collapsed: false,
+      items: [
+        { text: 'PPT讲解', link: '/奥克斯电热毯/售后/PPT讲解' },
+      ],
+    },
+  ],
+
   '雅鹿电热毯/基础参数/': [
     {
       text: '基础参数',
@@ -272,6 +282,7 @@ export default {
       items: [
         { text: '标准测试', link: '/开发测试/标准测试' },
         { text: '时间线测试', link: '/开发测试/时间线测试' },
+        { text: '样式测试', link: '/开发测试/样式测试' },
 
       ],
     },

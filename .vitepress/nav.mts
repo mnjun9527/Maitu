@@ -146,8 +146,8 @@ export default [
             link: '/奥克斯电热毯/售前/售前常见问题',
           },
           {
-            text: 'JavaScript',
-            link: '/js/',
+            text: '售后',
+            link: '/奥克斯电热毯/售后/PPT讲解',
           },
         ],
       },
@@ -429,8 +429,8 @@ export default [
             link: '/开发测试/时间线测试',
           },
           {
-            text: 'JavaScript',
-            link: '/js/',
+            text: '样式测试',
+            link: '/开发测试/样式测试',
           },
         ],
       },
