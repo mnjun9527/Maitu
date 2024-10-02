@@ -41,7 +41,7 @@
   background-position: center center;
   /* 设置背景图片为变量--vt-bg-content的值 */
   /* background-image: url("https://mnjun9527.github.io/Maitu/bg.svg") !important; */
-  background-image: url("/bg.svg");
+  background-image: url("./bg.svg");
 
 }
 
