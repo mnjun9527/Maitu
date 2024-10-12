@@ -4,7 +4,7 @@
   /* 超链接悬停文本颜色 */
   --ahover-color: red;
   /* 超链接下划线颜色 */
-  --abottom-color: #81d8cf;
+  --abottom-color: #00CED1;
 
   /* 列表的边框和背景颜色 */
   --ulol-color: #81accf;
@@ -116,14 +116,13 @@ ol li,
   list-style-type: none;
 }
 
-.ul>li:not(.tab):before,
-.ul>.li:not(.tab):before {
+.vp-doc ul:not(.table-of-contents ul) > li:before {
   margin-left: -22px;
   margin-top: 10px;
   width: .52em;
   height: .52em;
-  border: .1em solid var(--ulol-color);
-  background-color: var(--ulol-color) !important;
+  border: .1em solid var(--abottom-color);
+  background-color: var(--abottom-color) !important;
   border-radius: .31em;
   background: 0 0;
   content: '';
@@ -136,7 +135,7 @@ ul li:before,
 .ol .li:before,
 .ul .li:before {
   position: absolute;
-  background: var(--ulol-color);
+  background: var(--abottom-color);
   color: var(--olfore-color);
   cursor: pointer;
   -webkit-transition: all .3s ease-out;

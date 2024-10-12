@@ -367,7 +367,7 @@ export default [
           },
           {
             text: '售前进阶(暂无)',
-            link: '/css/',
+            link: '/培训模块/售前进阶/售前进阶',
           },
           {
             text: '经典案例(暂无)',
@@ -384,7 +384,7 @@ export default [
           },
           {
             text: '售后进阶(暂无)',
-            link: '/tencent/',
+            link: '/css/',
           },
           {
             text: '经典案例(暂无)',

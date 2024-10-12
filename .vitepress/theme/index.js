@@ -35,7 +35,8 @@ import ArticleMetadata from "./components/ArticleMetadata.vue"
 // import 'virtual:group-icons.css' //代码组样式
 //留言板
 import MyLayout from './MyLayout.vue'
-
+//加密
+import PasswordPage from './components/PasswordPage.vue';
 
 export default {
   //添加谷歌字体
@@ -83,6 +84,9 @@ export default {
     //  app.component('update' , update)
     //标题下添加时间 字数及阅读时间
     app.component('ArticleMetadata', ArticleMetadata)
+    //加密
+    app.component('PasswordPage', PasswordPage);
+
   },
 
   markdown: {
@@ -90,6 +94,12 @@ export default {
       // 启用懒加载
       lazyLoading: true,
     },
+  },
+
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => tag === 'font' // 添加你自定义的元素
+    }
   },
 
   // 图片放大代码
