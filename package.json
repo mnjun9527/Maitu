@@ -15,6 +15,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.23",
     "medium-zoom": "^1.1.0",
     "valine": "^1.5.2",
     "vitepress-markdown-timeline": "^1.2.1",
