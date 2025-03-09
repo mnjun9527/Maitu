@@ -54,7 +54,9 @@ onMounted(() => {
     .then(() => {
       new CozeWebSDK.WebChatClient({
         config: {
-          bot_id: '7471649100459687986',
+          //个人空间       
+          //bot_id: '7471649100459687986',
+          bot_id: '7479698185175744566',
           container: '#coze-chat-container' // 绑定到指定容器
         },
         componentProps: {
