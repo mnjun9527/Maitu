@@ -332,7 +332,7 @@ strong {
 /* 白天p 元素添加框样式 */
 .vp-doc>div>p {
   display: inline-block;
-  width: 97%;
+  width: 100%;
   vertical-align: top;
   align-self: flex-start;
   flex: 0 0 auto;
@@ -340,13 +340,13 @@ strong {
   border-width: 1px;
   height: auto;
   padding: 23px;
-  box-shadow: rgb(199, 220, 70) 6px 6px 0px 0px; /* 设置阴影效果 */
-  border-radius: 6px; /* 添加圆角 */
-  margin: 20px auto; /* 居中 */
-  background-color: #fff; /* 背景色为白色 */
+  box-shadow: rgb(199, 220, 70) 6px 6px 0px 0px; 
+  border-radius: 6px; 
+  margin: 20px auto; 
+  background-color: #fff; 
   font-size: 14px;
-  color: rgb(62, 62, 62); /* 设置文本颜色 */
-  text-align: justify; /* 设置文本对齐方式 */
+  color: rgb(62, 62, 62); 
+  text-align: justify; 
 }
 
 .dark .vp-doc>div>p {
@@ -370,8 +370,8 @@ p>a {
 
 /* 给 a 标签中的 span 元素添加样式 */
 p>a span {
-  border-bottom: 0px solid rgb(255, 53, 2) !important; /* 移除 span 的底部边框 */
-  font-size: 12px; /* 设置 span 中的字体大小 */
+  border-bottom: 0px solid rgb(255, 53, 2) !important; 
+  font-size: 12px; 
   visibility: visible; /* 确保可见 */
 }
 
