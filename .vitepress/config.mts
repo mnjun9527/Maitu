@@ -5,10 +5,12 @@ import nav from './nav.mts';
 import timeline from 'vitepress-markdown-timeline';
 //侧边栏
 import sidebar from './sidebar.mts';
+//流程图
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
 import vue from '@vitejs/plugin-vue';
-//代码组图标
-// import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+//代码组图标+自定义标题
+//import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 //自定义代码组图标
 // import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 
@@ -17,7 +19,8 @@ import vue from '@vitejs/plugin-vue';
 // const vitepressSidebarOptions = {
 //   /* Options... */
 // };
-export default defineConfig({
+export default withMermaid(  
+  defineConfig({
   title: 'Maitu 商贸',
   description: '产品资料站点',
   base: '/Maitu/',
@@ -107,6 +110,7 @@ export default defineConfig({
   },
 
   markdown: {
+    
     math: true, // 启用数学公式
     container: {
       tipLabel: '提示',
@@ -120,7 +124,7 @@ export default defineConfig({
     //时间线
     config: (md) => {
       md.use(timeline);
-      // md.use(groupIconMdPlugin); //代码组图标
+      //md.use(groupIconMdPlugin); //代码组图标
     },
     
     //行号
@@ -128,7 +132,8 @@ export default defineConfig({
   },
 
   vite: { 
-    plugins: [   
+    plugins: [
+      //groupIconVitePlugin() //代码组图标   
       // groupIconVitePlugin(
       //   { 
       //   customIcon: {
@@ -175,6 +180,13 @@ export default defineConfig({
     ],
   ],
 
+  mermaid: {
+    // refer https://mermaid.js.org/config/setup/modules/mermaidAPI.html#mermaidapi-configuration-defaults for options
+  },
+  // optionally set additional config for plugin itself with MermaidPluginConfig
+  mermaidPlugin: {
+    class: "mermaid my-class", // set additional css classes for parent container 
+  },
 
   
 
@@ -182,7 +194,7 @@ export default defineConfig({
   
   
   
-});
+}));
 
 // module.exports = {
 //   // 其他配置省略

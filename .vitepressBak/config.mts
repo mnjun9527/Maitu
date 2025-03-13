@@ -8,7 +8,7 @@ import sidebar from './sidebar.mts';
 
 import vue from '@vitejs/plugin-vue';
 //代码组图标
-// import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
+//import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 //自定义代码组图标
 // import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepress-plugin-group-icons'
 

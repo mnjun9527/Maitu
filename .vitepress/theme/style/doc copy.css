@@ -12,179 +12,58 @@
 }
 
 
-/* ==================== 晚上的一级标题样式 ==================== */
-.dark .vp-doc h1 {
+/* ==================== 一级标题样式 ==================== */
+.vp-doc h1 {
     background: -webkit-linear-gradient(-45deg, #e43498 5%, #5ad7dd 15%);
     background-clip: text; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
   
-/* ==================== 白天二级标题样式 ==================== */
+/* ==================== 二级标题样式 ==================== */
 
 .vp-doc h2 {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: unset;
-  line-height: 1.5em;
-  width: auto;
-  height: auto;
-  overflow: unset;
-  text-shadow: none;
-  transform: none;
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 63px; /* 背景图片大小 */
-  background-image: url("http://smibvzlob.hn-bkt.clouddn.com/Fg2Dp4zJFlYpDDQRGrP_wLLRzRSK");
-  border-style: none;
-  border-width: 1px;
-  border-color: rgb(0, 0, 0);
-  border-radius: 0px;
-  box-shadow: none;
-  -webkit-box-reflect: unset;
-  color: rgb(72, 179, 120) ; /* 文字颜色 */
-}
-.vp-doc h2:after{background:none;}
-
-/* 控制标题文本的样式 */
-/* .vp-doc h2 span {
-  display: inline-block;
-  font-size: 24px;
-  color: rgb(72, 179, 120) !important; 
-  line-height: 2.4em;
-  margin-top: 38px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  text-align: center;
-  text-indent: 0em;
-  letter-spacing: 0em;
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-repeat: no-repeat;
-  box-shadow: none;
-  transform: none;
-  overflow: unset;
-  border-style: none;
-  border-width: 1px;
-  border-radius: 0px;
-  height: 38px; 
-} */
-/* ==================== 晚上二级标题样式 ==================== */
-.dark .vp-doc h2 {
   border-bottom: 4px solid rgba(184, 66, 127, 0.5);
   line-height: 35px; 
   padding-left: 5px; 
   margin: 0;
   font-weight: 600;
   color: #16a0db; 
-  justify-content: flex-start;
-
 }
+
+
+
+
+
+
+
+
+
 
 /* 为二级标题添加一个背景渐变效果 */
-.dark .vp-doc h2:after {
-  content: ''; 
-  position: absolute; 
-  right: 0; 
-  bottom: 0; 
-  width: 400px; 
-  height: 10px; 
-  border-top-right-radius: 22px; 
-  background: linear-gradient(90deg, transparent, #16a0db); 
-  max-width: 50vw; 
+.vp-doc h2:after {
+    content: ''; 
+    position: absolute; 
+    right: 0; 
+    bottom: 0; 
+    width: 400px; 
+    height: 10px; 
+    border-top-right-radius: 22px; 
+    background: linear-gradient(90deg, transparent, #16a0db); 
+    max-width: 50vw; 
 }
 
-/* ==================== 白天三级标题样式 ==================== */
-h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  line-height: 1.5em;
-  font-size: 22px;
-  font-weight: bold;
-  color: rgb(130, 127, 196);
+/* ==================== 三级标题样式 ==================== */
+.vp-doc h3 {
+    margin: 20px 0; 
+    font-weight: 600; 
+    color: #16a0db; 
+    letter-spacing: -0.01em; 
+    line-height: 28px;
 }
 
-/* 左侧图标 */
-h3::before {
-  content: '';
-  display: block;
-  width: 35px;
-  height: 35px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-image: url('http://smibvzlob.hn-bkt.clouddn.com/Fu4FmWnsdyctkji3OKAv-CisdGl1');
-  margin-right: -20px;
-}
-
-/* 右侧图标 */
-h3::after {
-  content: '';
-  display: block;
-  width: 15px;
-  height: 15px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-image: url('http://smibvzlob.hn-bkt.clouddn.com/FqR6-DS57OvVpHcHd0w7MOwVLPoi');
-  margin-left: 5px;
-}
-
-/* ==================== 晚上三级标题样式 ==================== */
-.dark .vp-doc h3 {
-  margin: 20px 0; 
-  font-weight: 600; 
-  color: #16a0db; 
-  letter-spacing: -0.01em; 
-  line-height: 28px;
-  justify-content: flex-start;
-}
-
-
-/* ======白天的四级标题=== */
+/* ==================== 四级标题样式 ==================== */
 .vp-doc h4 {
-  display: flex;
-  align-items: unset;
-  justify-content: unset;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  line-height: 1.5em;
-  height: auto;
-  width: auto;
-  border-style: none none solid;
-  border-width: 1px 1px 2px;
-  border-color: rgb(0, 0, 0) rgb(0, 0, 0) rgba(232, 113, 245, 0.53);
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-repeat: no-repeat;
-  background-size: auto;
-  font-size: 20px;
-  font-weight: bold;
-  color: rgb(89, 89, 89);
-}
-
-
-.vp-doc h4:after {
-  content: ''; 
-  position: absolute; 
-  /* right: 0;  */
-  bottom: 0; 
-  width: 400px; 
-  height: 2px; 
-  border-top-right-radius: 22px; 
-  background: linear-gradient(100deg, rgb(127, 196, 250),transparent); 
-  max-width: 50vw; 
-}
-/* ==================== 夜晚四级标题样式 ==================== */
-.dark .vp-doc h4 {
     margin: 0.4em auto 0.1em; 
     padding-left: 6px; 
     padding-right: 6px; 
@@ -193,71 +72,9 @@ h3::after {
     border-top: 4px solid #16a0db; 
     color: #16a0db;
 }
-.dark .vp-doc h4:after {
-  background: none; 
-}
-/* ==================== 白天五级标题样式 ==================== */
-/* 增加主题类名隔离 */
-
-.vp-doc h5 {
-  margin: 0 ;
-  padding: 5px 1em ;
-  text-align: center ;
-  background-color: rgb(244, 246, 255);
-  letter-spacing: 1.5px ;
-  border-radius: 10px ;
-  font-family: PingFangSC-Regular, -apple-system-font, system-ui, Arial, sans-serif ;
-  font-size: 14px ;
-  color: #000 ;
-  overflow-wrap: break-word ;
-  box-sizing: border-box ;
-  display: inline-block ;  /* 让 h5 根据内容宽度自动调整 */
-  max-width: 100%;  /* 防止超出父容器宽度 */
-  
-  /* 添加背景图像 */
-  background-image: url("https://mmbiz.qpic.cn/sz_mmbiz_gif/QqnARVFkDuNoMhSsq6Dh8r07N1EvHqCNzic3Oiaib7iaWH0smHdlqEpw80Yxg1Mo5DFBW1fuFVCfXibAllBhlJW2JJw/640?wx_fmt=gif") ;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-repeat: no-repeat;
-  background-size: 4px ;
-  background-position: left center;
-  }
-  
-  /* 强制调整 H5 中的 span 元素 */
-  .vp-doc h5 span {
-  margin: 0;
-  padding: 0;
-  display: inline;  /* 让 span 根据内容宽度自动调整 */
-  caret-color: rgb(255, 0, 0);
-  border-radius: 10px;
-  font-family: PingFangSC-Regular;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  overflow-wrap: break-word;
-  box-sizing: border-box;
-  }
-  
-  /* 强制调整 <strong> 的样式 */
-  .vp-doc h5 span strong {
-  display: inline;  /* 让 strong 根据内容宽度自动调整 */
-  margin: 0;
-  padding: 0;
-  overflow-wrap: break-word;
-  box-sizing: border-box;
-  border-radius: 10px;  
-  }
-
-/* ==================== 晚上五级标题样式 ==================== */
-.dark .vp-doc h5 {
-  all: revert !important; /* 核弹级重置 */
-  display: block; /* 双重保险 */
-  margin: 1em 0 !important; /* 强制恢复默认间距 */
-  font-size: 17px !important;
-}
 
 /* ==================== 超链接样式 ==================== */
-/* .vp-doc{
+.vp-doc{
   p a:hover {
     border-radius: 6px;
     border-bottom: 2px solid transparent;
@@ -265,38 +82,15 @@ h3::after {
     color: var(--ahover-color) !important;
     cursor: pointer;
   }
-} */
+}
 
-/* ==================== 白天code块的字体大小 ==================== */
+/* ==================== code块的字体大小 ==================== */
 .VPDoc {
-  p code,
-  ul code {
-  color: rgb(245, 39, 99);
-  font-size: 14px;
-  line-height: 1.8em;
-  letter-spacing: 0em;
-  background: none 0% 0% / auto no-repeat scroll padding-box border-box, none rgba(53, 174, 189, 0.14);
-  width: auto;
-  height: auto;
-  margin-left: 2px;
-  margin-right: 2px;
-  padding: 2px 4px;
-  border-style: none;
-  border-width: 3px;
-  border-color: rgb(0, 0, 0) rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.4);
-  border-radius: 4px;
-  font-family: "Operator Mono", Consolas, Monaco, Menlo, monospace;
-  word-break: break-all;
-}}
-
-
-/* ==================== 夜晚code块的字体大小 ==================== */
-.dark .VPDoc {
   p code,
   ul code {
   font-weight: bold; 
   font-size: 14px; 
-  color: rgb(255, 218, 81);
+  color: #4C6BFE;
   }
 }
 
@@ -311,72 +105,15 @@ h3::after {
   
 /* ==================== 加粗文本样式 ==================== */
 strong {
-  font-weight: bold; 
-  font-size: 15px; 
-  background-color: rgb(255, 218, 81); 
-  color: rgb(0, 0, 0); 
+    color: #e44a8a;
 }
-
-/* ==================== 夜晚加粗文本样式 ==================== */
-.dark strong {
-  color: #e44a8a;
-  background-color: transparent;
+strong::before {
+    content: '[ '; 
 }
-.dark strong::before {
-  content: '[ '; 
-}
-.dark strong::after {
-  content: ' ]'; 
+strong::after {
+    content: ' ]'; 
 }
   
-/* 白天p 元素添加框样式 */
-.vp-doc>div>p {
-  display: inline-block;
-  width: 97%;
-  vertical-align: top;
-  align-self: flex-start;
-  flex: 0 0 auto;
-  border-style: solid;
-  border-width: 1px;
-  height: auto;
-  padding: 23px;
-  box-shadow: rgb(199, 220, 70) 6px 6px 0px 0px; /* 设置阴影效果 */
-  border-radius: 6px; /* 添加圆角 */
-  margin: 20px auto; /* 居中 */
-  background-color: #fff; /* 背景色为白色 */
-  font-size: 14px;
-  color: rgb(62, 62, 62); /* 设置文本颜色 */
-  text-align: justify; /* 设置文本对齐方式 */
-}
-
-.dark .vp-doc>div>p {
-  all: revert !important; /* 核弹级重置 */
-}
-
-
-/* 给所有 a 标签添加样式 */
-p>a {
-  font-size: 15px; /* 字体大小 */
-  letter-spacing: 0.2em; /* 字母间距 */
-  word-spacing: 0.1em; /* 单词间距 */
-  text-align: justify; /* 文本对齐 */
-  color: rgb(14, 136, 235) !important; /* 字体颜色 */
-  text-decoration: underline; /* 添加下划线 */
-  font-weight: bold; /* 加粗 */
-  border-bottom: 0px solid rgb(255, 53, 2) !important; /* 底部边框 */
-  font-family: STHeitiSC-Light; /* 字体 */
-  visibility: visible; /* 可见 */
-}
-
-/* 给 a 标签中的 span 元素添加样式 */
-p>a span {
-  border-bottom: 0px solid rgb(255, 53, 2) !important; /* 移除 span 的底部边框 */
-  font-size: 12px; /* 设置 span 中的字体大小 */
-  visibility: visible; /* 确保可见 */
-}
-
-
-
 
 
 

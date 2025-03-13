@@ -20,6 +20,8 @@ import 'vitepress-markdown-timeline/dist/theme/index.css';
 //西瓜视频组件
 import xgplayer from "./components/xgplayer.vue"
 
+
+
 //标题下添加时间有下面这个替代了
 // import update from "./components/update.vue"
 
@@ -32,7 +34,7 @@ import ArticleMetadata from "./components/ArticleMetadata.vue"
 // import notice from "./components/notice.vue"
 
 //代码组图标
-// import 'virtual:group-icons.css' //代码组样式
+//import 'virtual:group-icons.css' //代码组样式
 //留言板
 import MyLayout from './MyLayout.vue'
 //加密
