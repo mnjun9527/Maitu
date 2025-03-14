@@ -113,7 +113,7 @@ export default {
       collapsed: false,
       items: [
         { text: '售后指南', link: '/志高移动空调/售后/售后指南' },
-        { text: '售后指南', link: '/志高移动空调/售后/售后指南2' },
+        // { text: '售后指南', link: '/志高移动空调/售后/售后指南2' },
       ],
     },
   ],
