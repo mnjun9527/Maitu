@@ -332,6 +332,18 @@ export default {
     },
   ],
 
+  '培训模块/苏泊尔/': [
+    {
+      text: '苏泊尔',
+      collapsed: false,
+      items: [
+        { text: '苏泊尔售后', link: '/培训模块/苏泊尔/苏泊尔售后指南' },
+        // { text: '苏泊尔sop2', link: '/培训模块/苏泊尔/苏泊尔sop2'},
+
+      ],
+    },
+  ],
+
 
 
 

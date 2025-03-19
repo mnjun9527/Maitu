@@ -37,8 +37,11 @@ import ArticleMetadata from "./components/ArticleMetadata.vue"
 //import 'virtual:group-icons.css' //代码组样式
 //留言板
 import MyLayout from './MyLayout.vue'
-//加密
+//页面加密
 import PasswordPage from './components/PasswordPage.vue';
+//局部加密
+import SecretBlock from './components/SecretBlock.vue'
+
 
 export default {
   //添加谷歌字体
@@ -88,6 +91,8 @@ export default {
     app.component('ArticleMetadata', ArticleMetadata)
     //加密
     app.component('PasswordPage', PasswordPage);
+
+    app.component('SecretBlock', SecretBlock);
 
   },
 
